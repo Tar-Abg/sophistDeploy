@@ -1,0 +1,121 @@
+.form {
+
+  &-label {
+    position: relative;
+    display: flex;
+    margin-bottom: 20px;
+    color: $clr-ntrl-max;
+
+    &--flex-container {
+      flex-direction: column;
+
+      .form-input {
+        width: 418px;
+      }
+    }
+  }
+
+  &-input {
+    width: 100%;
+    height: 50px;
+    background: $clr-ntrl-min;
+    color: $clr-ntrl-max;
+    font: $type-regular normal 16px / 21px $Segoe-UI-sans;
+    letter-spacing: 0.08em;
+    border: 1px solid #e9e9e9;
+    box-sizing: border-box;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.04);
+    border-radius: 10px;
+    padding: 0 20px;
+
+    &::placeholder {
+      font-weight: $type-light;
+      font-size: $type-small;
+      line-height: 21px;
+      letter-spacing: 0.08em;
+      color: $placeholder-color;
+    }
+  }
+
+  &-textarea {
+    width: 697px;
+    height: 100px;
+    min-height: 100px;
+    padding: 15px 20px;
+    background: $clr-ntrl-min;
+    border: 1px solid #e9e9e9;
+    box-sizing: border-box;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.04);
+    border-radius: 10px;
+    font: $type-light normal 16px / 21px $Segoe-UI-sans;
+    letter-spacing: 0.08em;
+    color: #9A9A9A;
+  }
+}
+
+.label-for-security-number {
+  margin-bottom: 4px;
+  font: $type-regular normal $type-small $Segoe-UI-sans;
+  line-height: 21px;
+  letter-spacing: 0.08em;
+  color: $clr-ntrl-max;
+}
+
+.error-message {
+  position: absolute;
+  left: 0;
+  bottom: -24px;
+  margin: 5px 0;
+  font: $type-light normal 14px / 19px $Segoe-UI-sans;
+  color: $danger-color;
+  font-family: $Segoe-UI-sans;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+}
+
+/* The container */
+.question-list__item .container-for-checkbox {
+  flex: 0 0 26%;
+  max-width: 26%;
+}
+
+.checkboxes {
+  &-divider-line {
+    width: 100%;
+    height: 1px;
+    margin: 25px 0;
+    background: #E9E9E9;
+  }
+
+  &-wrapper-flex {
+    display: flex;
+
+    &-with-min-width {
+      max-width: 40%;
+    }
+  }
+}
+
+.form-input-container {
+  position: relative;
+  display: flex;
+  grid-gap: 0 55px;
+
+  .input-group-wrapper {
+    display: flex;
+    grid-gap: 0 12px;
+
+    input {
+      width: 55px;
+      height: 50px;
+
+      &[type=number]::-webkit-inner-spin-button,
+      &[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        margin: 0;
+      }
+    }
+  }
+}
