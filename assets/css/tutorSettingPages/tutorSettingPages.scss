@@ -1,0 +1,53 @@
+.tutor-settings-nested-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+  }
+
+  &__info {
+    margin-bottom: 52px;
+    color: #de9300;
+
+    h2, p {
+      font: $type-bold normal 20px $Segoe-UI-sans;
+      line-height: 25px;
+      margin: 0;
+      padding: 0;
+    }
+
+    p {
+      font-weight: $type-regular;
+    }
+  }
+
+  .form-label {
+    margin-bottom: 0;
+  }
+
+  .grid-gap {
+    &-space {
+      flex-wrap: wrap;
+      max-width: 60%;
+      grid-gap: 27px 23px;
+    }
+  }
+
+  &__form--fixed--width {
+    .form-label {
+      max-width: 468px;
+    }
+
+    .setting-form-input-wrapper {
+      display: flex;
+      flex-direction: column;
+      grid-gap: 20px;
+    }
+  }
+}
