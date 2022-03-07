@@ -27,7 +27,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    grid-gap: 54px;
+    grid-gap: 50px;
 
     &--item {
       position: relative;
@@ -132,7 +132,8 @@
       }
 
       &.table-with-pt {
-        width: 447px;
+        width: auto;
+        min-width: 447px;
 
         td {
           padding: 15px 20px 10px 0;
